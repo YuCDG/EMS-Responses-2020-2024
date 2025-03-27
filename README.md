@@ -23,12 +23,14 @@ Rows: 7,300,000
 - Final parquet files will be created for each respective dimension/table for normalization
 ## Data Storage
 - I'm making use of google collab and google drive to store temporary parquet files. Then finalized data tables in parquet format will be stored on my local storage for use.
-## Data Transofmration & Cleaning
-- Making sure that all Null or NA values are replaced appropriately within context
+## Data Transformation & Cleaning
+- Most Null and NA values will be kept as is. Their rows will not be removed because there are still relevant information that should be kept.
 - Making sure time data are in a cohesive and correct time format
-- Remove irrelevant rows of data that add noise to the rest
 - Ensure data types are consistent between columns and are correct
 ## Power BI Visuals
 ### Violent Incidents
 I created an interactive line-graph visual which shows all stabbing and shooting calls that occured between 2020-2024. We can adjust the time and borough accordingly. <br>
 ![Violent Incidents](https://github.com/user-attachments/assets/064b34d4-56a3-4274-8314-b3c765200bea)
+<br>
+Additionally, it seems like most of the violent incidents occur between June and September. This does line up with the idea that the hotter months increases likelihood of crime.
+We might attribute this to factors such as longer day light hours and more frequent outdoor activities.
